@@ -41,6 +41,7 @@ void setup()
 // the loop routine runs over and over again forever:
 void loop()
 {
+  //Read input pins to get state
   int isActive = digitalRead(activePin);
   int isReset = digitalRead(resetPin);
 
@@ -111,6 +112,7 @@ void loop()
     }
   }
 
+  //Debug printout statements
   Serial.print(isActive);
   Serial.print(" ");
   Serial.print(pulse);
